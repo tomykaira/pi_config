@@ -1,0 +1,11 @@
+[Unit]
+Description=Automate switchbot control
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/home/pi/switchbot/auto.py
+WorkingDirectory=/home/pi/switchbot
+
+[Install]
+WantedBy=multi-user.target
